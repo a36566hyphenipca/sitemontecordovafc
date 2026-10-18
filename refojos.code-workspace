@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "refojos",
+			"path": "../refojos"
+		},
+		{
+			"name": "files (5)",
+			"path": "."
+		},
+		{
+			"path": "../sequeiro"
+		},
+		{
+			"path": "../raimonda"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "files (5)"
+	}
+}

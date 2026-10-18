@@ -1,0 +1,4 @@
+Site Monte Cordova FC
+Ajoute dans ce dossier tes dossiers d'images : images/ et STAFF/
+(les noms doivent etre exactement les memes, majuscules comprises).
+Ouvre index.html pour voir le site.

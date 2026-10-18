@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipas – Monte Córdova FC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__interieur conteneur">
+      <a class="logo" href="index.html" aria-label="Página inicial do Monte Córdova FC">
+        <span class="logo__ecusson" aria-hidden="true"></span>
+        <span class="logo__text">Monte Córdova FC</span>
+      </a>
+
+      <button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+
+      <nav class="nav" id="menu" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Equipas <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="#seniores">Seniores</a>
+              <a href="#veteranos">Veteranos</a>
+              <a href="#juniores">Jun A · S19</a>
+              <a href="#juniores">Jun B · S17</a>
+              <a href="#juniores">Jun C · S15</a>
+              <a href="#juniores">Jun D · S13</a>
+              <a href="#juniores">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="#futebol-9">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="#futebol-7">Jun D · S13</a>
+              <a href="#futebol-7">Jun D · S12</a>
+              <a href="#futebol-7">Jun E · S10</a>
+              <a href="#futebol-7">Jun E · S11</a>
+              <a href="#futebol-7">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Jogadores <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="jogadores.html#futebol-11-seniores">Seniores</a>
+              <a href="jogadores.html#futebol-11-veteranos">Veteranos</a>
+              <a href="jogadores.html#futebol-11-jun-a-s19">Jun A · S19</a>
+              <a href="jogadores.html#futebol-11-jun-b-s17">Jun B · S17</a>
+              <a href="jogadores.html#futebol-11-jun-c-s15">Jun C · S15</a>
+              <a href="jogadores.html#futebol-11-jun-d-s13">Jun D · S13</a>
+              <a href="jogadores.html#futebol-11-jun-e-s12">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="jogadores.html#futebol-9-jun-d-s13">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="jogadores.html#futebol-7-jun-d-s13">Jun D · S13</a>
+              <a href="jogadores.html#futebol-7-jun-d-s12">Jun D · S12</a>
+              <a href="jogadores.html#futebol-7-jun-e-s10">Jun E · S10</a>
+              <a href="jogadores.html#futebol-7-jun-e-s11">Jun E · S11</a>
+              <a href="jogadores.html#futebol-7-jun-f-s9">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Calendário <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="calendario.html#seniores">Seniores</a>
+              <a href="calendario.html#veteranos">Veteranos</a>
+              <a href="calendario.html#juniores">Jun A · S19</a>
+              <a href="calendario.html#juniores">Jun B · S17</a>
+              <a href="calendario.html#juniores">Jun C · S15</a>
+              <a href="calendario.html#juniores">Jun D · S13</a>
+              <a href="calendario.html#juniores">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="calendario.html#futebol-9">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="calendario.html#futebol-7">Jun D · S13</a>
+              <a href="calendario.html#futebol-7">Jun D · S12</a>
+              <a href="calendario.html#futebol-7">Jun E · S10</a>
+              <a href="calendario.html#futebol-7">Jun E · S11</a>
+              <a href="calendario.html#futebol-7">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <a href="noticias.html">Notícias</a>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Fotos e vídeos <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="media.html">Seniores</a>
+              <a href="media.html">Veteranos</a>
+              <a href="media.html">Jun A · S19</a>
+              <a href="media.html">Jun B · S17</a>
+              <a href="media.html">Jun C · S15</a>
+              <a href="media.html">Jun D · S13</a>
+              <a href="media.html">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="media.html">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="media.html">Jun D · S13</a>
+              <a href="media.html">Jun D · S12</a>
+              <a href="media.html">Jun E · S10</a>
+              <a href="media.html">Jun E · S11</a>
+              <a href="media.html">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Staff <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="staffs.html#seniores">Seniores</a>
+              <a href="staffs.html#veteranos">Veteranos</a>
+              <a href="staffs.html#juniores">Jun A · S19</a>
+              <a href="staffs.html#juniores">Jun B · S17</a>
+              <a href="staffs.html#juniores">Jun C · S15</a>
+              <a href="staffs.html#juniores">Jun D · S13</a>
+              <a href="staffs.html#juniores">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="staffs.html#futebol-9">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="staffs.html#futebol-7">Jun D · S13</a>
+              <a href="staffs.html#futebol-7">Jun D · S12</a>
+              <a href="staffs.html#futebol-7">Jun E · S10</a>
+              <a href="staffs.html#futebol-7">Jun E · S11</a>
+              <a href="staffs.html#futebol-7">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Palmarés <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="index.html#palmares">Palmarés</a>
+              <a href="index.html#seniores">Seniores</a>
+              <a href="index.html#veteranos">Veteranos</a>
+              <a href="index.html#juniores">Jun A · S19</a>
+              <a href="index.html#juniores">Jun B · S17</a>
+              <a href="index.html#juniores">Jun C · S15</a>
+              <a href="index.html#juniores">Jun D · S13</a>
+              <a href="index.html#juniores">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="index.html#futebol-9">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="index.html#futebol-7">Jun D · S13</a>
+              <a href="index.html#futebol-7">Jun D · S12</a>
+              <a href="index.html#futebol-7">Jun E · S10</a>
+              <a href="index.html#futebol-7">Jun E · S11</a>
+              <a href="index.html#futebol-7">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="conteneur page-header">
+      <p class="eyebrow">Estrutura do clube</p>
+      <h1>Equipas</h1>
+      <div class="team-switcher">
+        <label class="team-switcher__label" for="teamCategory">Categoria</label>
+        <select id="teamCategory" class="team-switcher__select" aria-label="Escolher categoria">
+          <option value="futebol-11" selected>Futebol 11</option>
+          <option value="futebol-9">Futebol 9</option>
+          <option value="futebol-7">Futebol 7</option>
+        </select>
+      </div>
+    </div>
+
+    <section class="section-box">
+      <div class="conteneur team-panels">
+        <div id="seniores" class="team-panel is-visible" data-category="futebol-11">
+          <article class="team-card">
+            <div class="team-card__img"></div>
+            <div class="team-card__body">
+              <h3>Seniores</h3>
+              <p>Principal equipa do clube, com identidade competitiva e compromisso colectivo em cada jogo.</p>
+            </div>
+          </article>
+          <ul class="team-list">
+            <li><strong>Treinador</strong> João Vieira</li>
+            <li><strong>Categoria</strong> Futebol 11</li>
+            <li><strong>Idades</strong> Sub-18 / Sub-17 / Sub-15</li>
+            <li><strong>Estádio</strong> Campo do Monte Córdova</li>
+            <li><strong>Escalão</strong> Sénior principal</li>
+          </ul>
+        </div>
+
+        <div id="veteranos" class="team-panel" data-category="futebol-11">
+          <article class="team-card">
+            <div class="team-card__img"></div>
+            <div class="team-card__body">
+              <h3>Veteranos</h3>
+              <p>Equipa de experiência, espírito de grupo e grande presença no futebol recreativo.</p>
+            </div>
+          </article>
+          <ul class="team-list">
+            <li><strong>Treinador</strong> Manuel Sousa</li>
+            <li><strong>Categoria</strong> Futebol 11</li>
+            <li><strong>Idades</strong> Veteranos +35</li>
+            <li><strong>Focus</strong> Equipa de veteranos</li>
+            <li><strong>Objetivo</strong> Competitividade e camaradagem</li>
+          </ul>
+        </div>
+
+        <div id="juniores" class="team-panel" data-category="futebol-11">
+          <article class="team-card">
+            <div class="team-card__img"></div>
+            <div class="team-card__body">
+              <h3>Juniores</h3>
+              <p>Escalões jovens em formação, com desenvolvimento de talento e valores do clube.</p>
+            </div>
+          </article>
+          <ul class="team-list">
+            <li><strong>Categoria</strong> Futebol 11</li>
+            <li><strong>Idades</strong> Jun B · Sub-17 / Jun A · Sub-19 / Jun C · Sub-15 / Jun D · Sub-13 / Jun D · Sub-12</li>
+            <li><strong>Jun B</strong> Sub-17</li>
+            <li><strong>Jun A</strong> Sub-19</li>
+            <li><strong>Jun C</strong> Sub-15</li>
+          </ul>
+        </div>
+
+        <div id="futebol-9" class="team-panel" data-category="futebol-9">
+          <article class="team-card">
+            <div class="team-card__img"></div>
+            <div class="team-card__body">
+              <h3>Futebol 9</h3>
+              <p>Dinâmica intensa e muito ritmo, com equipas em desenvolvimento para modalidades 9x9.</p>
+            </div>
+          </article>
+          <ul class="team-list">
+            <li><strong>Categoria</strong> Futebol 9</li>
+            <li><strong>Idades</strong> Jun D · Sub-13</li>
+            <li><strong>Escalões</strong> Jun D · Sub-13</li>
+            <li><strong>Estilo</strong> Ritmo e rapidez</li>
+            <li><strong>Objectivo</strong> Desenvolvimento técnico</li>
+          </ul>
+        </div>
+
+        <div id="futebol-7" class="team-panel" data-category="futebol-7">
+          <article class="team-card">
+            <div class="team-card__img"></div>
+            <div class="team-card__body">
+              <h3>Futebol 7</h3>
+              <p>Equipa com rapidez de execução e muita intensidade nas transições ofensivas.</p>
+            </div>
+          </article>
+          <ul class="team-list">
+            <li><strong>Categoria</strong> Futebol 7</li>
+            <li><strong>Idades</strong> Jun D · Sub-13 / Jun D · Sub-12 / Jun E · Sub-10 / Jun E · Sub-11 / Jun F · Sub-9</li>
+            <li><strong>Escalões</strong> Jun D · Sub-13 / Jun D · Sub-12 / Jun E · Sub-10 / Jun E · Sub-11 / Jun F · Sub-9</li>
+            <li><strong>Estilo</strong> Transições rápidas</li>
+            <li><strong>Objectivo</strong> Criatividade e intensidade</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="conteneur footer__grid">
+      <div>
+        <h3>Monte Córdova FC</h3>
+        <p>Rua do Campo de Futebol<br>Monte Córdova, Santo Tirso</p>
+      </div>
+      <div>
+        <h3>Contactos</h3>
+        <p><a href="mailto:montcordova-fc@sapo.pt">montcordova-fc@sapo.pt</a><br><a href="tel:+351918849250">918 849 250</a></p>
+      </div>
+      <div>
+        <h3>Redes sociais</h3>
+        <div class="socials">
+          <a href="https://www.facebook.com/MonteCordovaFC/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/montecordovafutebolclube/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__sponsors" aria-label="Patrocínios">
+      <strong>Sponsors</strong>
+      <span>Partner 1</span>
+      <span>Partner 2</span>
+      <span>Partner 3</span>
+    </div>
+    <p class="footer__bas">© 2026 Monte Córdova Futebol Clube · Todos os direitos reservados</p>
+    <p class="footer__credito">Fotografias: Iara Monteiro</p>
+  </footer>
+
+  <script>
+    const teamCategory = document.getElementById('teamCategory');
+    const panels = document.querySelectorAll('.team-panel');
+
+    if (teamCategory) {
+      const updatePanels = () => {
+        const selected = teamCategory.value;
+        panels.forEach((panel) => {
+          const match = selected === 'futebol-11' ? panel.dataset.category === 'futebol-11' : panel.dataset.category === selected;
+          panel.classList.toggle('is-visible', match);
+        });
+      };
+
+      teamCategory.addEventListener('change', updatePanels);
+      updatePanels();
+
+      const applyHash = () => {
+        const id = decodeURIComponent(window.location.hash.slice(1));
+        const panel = id ? document.getElementById(id) : null;
+        if (!panel || !panel.classList.contains('team-panel')) return;
+        teamCategory.value = panel.dataset.category;
+        updatePanels();
+        panel.scrollIntoView();
+      };
+
+      window.addEventListener('hashchange', applyHash);
+      document.querySelectorAll('.dropdown-menu a').forEach((link) => {
+        link.addEventListener('click', () => setTimeout(applyHash, 0));
+      });
+      applyHash();
+    }
+
+    const burger = document.querySelector('.burger');
+    const menu = document.getElementById('menu');
+    const dropdowns = document.querySelectorAll('.nav__dropdown');
+
+    if (burger && menu) {
+      burger.addEventListener('click', () => {
+        const aberto = menu.classList.toggle('ouvert');
+        burger.setAttribute('aria-expanded', aberto);
+      });
+    }
+
+    dropdowns.forEach((dropdown) => {
+      const dropdownButton = dropdown.querySelector('.nav__button');
+
+      if (!dropdownButton) return;
+
+      dropdownButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const shouldOpen = !dropdown.classList.contains('is-open');
+
+        dropdowns.forEach((otherDropdown) => {
+          if (otherDropdown !== dropdown) {
+            otherDropdown.classList.remove('is-open');
+            const otherButton = otherDropdown.querySelector('.nav__button');
+            if (otherButton) {
+              otherButton.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+
+        dropdown.classList.toggle('is-open', shouldOpen);
+        dropdownButton.setAttribute('aria-expanded', String(shouldOpen));
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      dropdowns.forEach((dropdown) => {
+        const button = dropdown.querySelector('.nav__button');
+        const clickedInsideDropdown = dropdown.contains(event.target);
+        const clickedButton = button && (event.target === button || button.contains(event.target));
+
+        if (!clickedInsideDropdown || clickedButton) {
+          return;
+        }
+
+        dropdown.classList.remove('is-open');
+        if (button) {
+          button.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

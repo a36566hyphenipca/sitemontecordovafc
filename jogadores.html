@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogadores – Monte Córdova FC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="players-page">
+  <header class="header">
+    <div class="header__interieur conteneur">
+      <a class="logo" href="index.html" aria-label="Página inicial do Monte Córdova FC">
+        <span class="logo__ecusson" aria-hidden="true"></span>
+        <span class="logo__text">Monte Córdova FC</span>
+      </a>
+
+      <button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+
+      <nav class="nav" id="menu" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Equipas <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="equipas.html#seniores">Seniores</a>
+              <a href="equipas.html#veteranos">Veteranos</a>
+              <a href="equipas.html#juniores">Jun A · S19</a>
+              <a href="equipas.html#juniores">Jun B · S17</a>
+              <a href="equipas.html#juniores">Jun C · S15</a>
+              <a href="equipas.html#juniores">Jun D · S13</a>
+              <a href="equipas.html#juniores">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="equipas.html#futebol-9">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="equipas.html#futebol-7">Jun D · S13</a>
+              <a href="equipas.html#futebol-7">Jun D · S12</a>
+              <a href="equipas.html#futebol-7">Jun E · S10</a>
+              <a href="equipas.html#futebol-7">Jun E · S11</a>
+              <a href="equipas.html#futebol-7">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Jogadores <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="jogadores.html#futebol-11-seniores">Seniores</a>
+              <a href="jogadores.html#futebol-11-veteranos">Veteranos</a>
+              <a href="jogadores.html#futebol-11-jun-a-s19">Jun A · S19</a>
+              <a href="jogadores.html#futebol-11-jun-b-s17">Jun B · S17</a>
+              <a href="jogadores.html#futebol-11-jun-c-s15">Jun C · S15</a>
+              <a href="jogadores.html#futebol-11-jun-d-s13">Jun D · S13</a>
+              <a href="jogadores.html#futebol-11-jun-e-s12">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="jogadores.html#futebol-9-jun-d-s13">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="jogadores.html#futebol-7-jun-d-s13">Jun D · S13</a>
+              <a href="jogadores.html#futebol-7-jun-d-s12">Jun D · S12</a>
+              <a href="jogadores.html#futebol-7-jun-e-s10">Jun E · S10</a>
+              <a href="jogadores.html#futebol-7-jun-e-s11">Jun E · S11</a>
+              <a href="jogadores.html#futebol-7-jun-f-s9">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Calendário <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="calendario.html#seniores">Seniores</a>
+              <a href="calendario.html#veteranos">Veteranos</a>
+              <a href="calendario.html#juniores">Jun A · S19</a>
+              <a href="calendario.html#juniores">Jun B · S17</a>
+              <a href="calendario.html#juniores">Jun C · S15</a>
+              <a href="calendario.html#juniores">Jun D · S13</a>
+              <a href="calendario.html#juniores">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="calendario.html#futebol-9">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="calendario.html#futebol-7">Jun D · S13</a>
+              <a href="calendario.html#futebol-7">Jun D · S12</a>
+              <a href="calendario.html#futebol-7">Jun E · S10</a>
+              <a href="calendario.html#futebol-7">Jun E · S11</a>
+              <a href="calendario.html#futebol-7">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <a href="noticias.html">Notícias</a>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Fotos e vídeos <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="media.html">Seniores</a>
+              <a href="media.html">Veteranos</a>
+              <a href="media.html">Jun A · S19</a>
+              <a href="media.html">Jun B · S17</a>
+              <a href="media.html">Jun C · S15</a>
+              <a href="media.html">Jun D · S13</a>
+              <a href="media.html">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="media.html">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="media.html">Jun D · S13</a>
+              <a href="media.html">Jun D · S12</a>
+              <a href="media.html">Jun E · S10</a>
+              <a href="media.html">Jun E · S11</a>
+              <a href="media.html">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Staff <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="staffs.html#seniores">Seniores</a>
+              <a href="staffs.html#veteranos">Veteranos</a>
+              <a href="staffs.html#juniores">Jun A · S19</a>
+              <a href="staffs.html#juniores">Jun B · S17</a>
+              <a href="staffs.html#juniores">Jun C · S15</a>
+              <a href="staffs.html#juniores">Jun D · S13</a>
+              <a href="staffs.html#juniores">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="staffs.html#futebol-9">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="staffs.html#futebol-7">Jun D · S13</a>
+              <a href="staffs.html#futebol-7">Jun D · S12</a>
+              <a href="staffs.html#futebol-7">Jun E · S10</a>
+              <a href="staffs.html#futebol-7">Jun E · S11</a>
+              <a href="staffs.html#futebol-7">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Palmarés <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="index.html#palmares">Palmarés</a>
+              <a href="index.html#seniores">Seniores</a>
+              <a href="index.html#veteranos">Veteranos</a>
+              <a href="index.html#juniores">Jun A · S19</a>
+              <a href="index.html#juniores">Jun B · S17</a>
+              <a href="index.html#juniores">Jun C · S15</a>
+              <a href="index.html#juniores">Jun D · S13</a>
+              <a href="index.html#juniores">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="index.html#futebol-9">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="index.html#futebol-7">Jun D · S13</a>
+              <a href="index.html#futebol-7">Jun D · S12</a>
+              <a href="index.html#futebol-7">Jun E · S10</a>
+              <a href="index.html#futebol-7">Jun E · S11</a>
+              <a href="index.html#futebol-7">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="players-hero">
+      <div class="conteneur page-header">
+        <p class="eyebrow">Plantel</p>
+        <h1>Jogadores</h1>
+        <div class="team-switcher">
+          <label class="team-switcher__label" for="playerCategory">Categoria</label>
+          <select id="playerCategory" class="team-switcher__select" aria-label="Escolher categoria">
+            <option value="futebol-11" selected>Futebol 11</option>
+            <option value="futebol-9">Futebol 9</option>
+            <option value="futebol-7">Futebol 7</option>
+          </select>
+          <label class="team-switcher__label" for="playerTeam">Equipa</label>
+          <select id="playerTeam" class="team-switcher__select" aria-label="Escolher equipa"></select>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-box players-roster">
+      <div class="conteneur">
+        <div class="roster-heading">
+          <h2 id="teamRosterTitle">Seniores</h2>
+        </div>
+        <div class="players-grid" id="playersGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="conteneur footer__grid">
+      <div>
+        <h3>Monte Córdova FC</h3>
+        <p>Rua do Campo de Futebol<br>Monte Córdova, Santo Tirso</p>
+      </div>
+      <div>
+        <h3>Contactos</h3>
+        <p><a href="mailto:montcordova-fc@sapo.pt">montcordova-fc@sapo.pt</a><br><a href="tel:+351918849250">918 849 250</a></p>
+      </div>
+      <div>
+        <h3>Redes sociais</h3>
+        <div class="socials">
+          <a href="https://www.facebook.com/MonteCordovaFC/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/montecordovafutebolclube/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__sponsors" aria-label="Patrocínios">
+      <strong>Sponsors</strong>
+      <span>Partner 1</span>
+      <span>Partner 2</span>
+      <span>Partner 3</span>
+    </div>
+    <p class="footer__bas">© 2026 Monte Córdova Futebol Clube · Todos os direitos reservados</p>
+    <p class="footer__credito">Fotografias: Iara Monteiro</p>
+  </footer>
+
+  <script>
+    const playerCategory = document.getElementById('playerCategory');
+    const playerTeam = document.getElementById('playerTeam');
+    const playersGrid = document.getElementById('playersGrid');
+    const teamRosterTitle = document.getElementById('teamRosterTitle');
+    const teams = [
+      { name: 'Seniores', category: 'futebol-11' },
+      { name: 'Veteranos', category: 'futebol-11' },
+      { name: 'Jun A · S19', category: 'futebol-11' },
+      { name: 'Jun B · S17', category: 'futebol-11' },
+      { name: 'Jun C · S15', category: 'futebol-11' },
+      { name: 'Jun D · S13', category: 'futebol-11' },
+      { name: 'Jun E · S12', category: 'futebol-11' },
+      { name: 'Jun D · S13', category: 'futebol-9' },
+      { name: 'Jun D · S13', category: 'futebol-7' },
+      { name: 'Jun D · S12', category: 'futebol-7' },
+      { name: 'Jun E · S10', category: 'futebol-7' },
+      { name: 'Jun E · S11', category: 'futebol-7' },
+      { name: 'Jun F · S9', category: 'futebol-7' }
+    ];
+    const players = [
+      {
+        teamIndex: 0,
+        slot: 1,
+        name: 'Diogo Arcipreste',
+        birthDate: '22/12/2004',
+        height: '1,82 m',
+        weight: '76 kg',
+        number: '7',
+        position: 'Médio',
+        photo: 'images/1318687_diogo_arcipreste_20250731122324.jpg'
+      },
+      {
+        teamIndex: 0,
+        slot: 0,
+        name: 'Cristiano Arcipreste',
+        birthDate: '09/07/1995',
+        height: '1,74 m',
+        weight: '69 kg',
+        number: '23',
+        position: 'Avançado',
+        photo: 'images/cris.png'
+      },
+      {
+        teamIndex: 0,
+        slot: 2,
+        name: 'Tiago Dias',
+        birthDate: '18/10/2004',
+        height: '?',
+        weight: '?',
+        number: '9',
+        position: 'Avançado',
+        photo: 'images/1560200_tiago_dias_20260922134902.jpg'
+      },
+      {
+        teamIndex: 0,
+        slot: 3,
+        name: 'Francisco Ribeiro',
+        birthDate: '03/12/2005',
+        height: '1,72 m',
+        weight: '59 kg',
+        number: '4',
+        position: 'Defesa central',
+        photo: 'images/1568843_kiko_20261006163336.png'
+      },
+      {
+        teamIndex: 0,
+        slot: 4,
+        name: 'Vinicius Sousa',
+        birthDate: '30/05/2005',
+        height: '163cm',
+        weight: '62kg',
+        number: '24',
+        position: 'avançado',
+        photo: 'images/vinicius.JPG'
+      },
+      {
+        teamIndex: 0,
+        slot: 5,
+        name: 'José Neto',
+        birthDate: '16/07/1995',
+        height: '?',
+        weight: '?',
+        number: '99',
+        position: 'Guarda-redes',
+        photo: 'images/joseneto.JPG'
+      },
+      {
+        teamIndex: 0,
+        slot: 6,
+        name: 'Kevin Costa',
+        birthDate: '17/03/2003',
+        height: '?',
+        weight: '?',
+        number: '22',
+        position: 'Avançado',
+        photo: 'images/1568842_kevin_costa_20261006163210.png'
+      },
+      {
+        teamIndex: 0,
+        slot: 7,
+        name: 'Angelo  Mendes',
+        birthDate: '02/06/2000',
+        height: '?',
+        weight: '?',
+        number: '31',
+        position: 'Guarda-redes',
+        photo: 'images/angelo.JPG'
+      },
+      {
+        teamIndex: 0,
+        slot: 8,
+        name: 'Rafael Monteiro',
+        birthDate: '25/04/2001',
+        height: '?',
+        weight: '?',
+        number: '13',
+        position: 'Médio',
+        photo: 'images/1568840_rafael_monteiro_20261006163204.png'
+      },
+      {
+        teamIndex: 0,
+        slot: 9,
+        name: 'Luís Silva',
+        birthDate: '03/08.2002',
+        height: '?',
+        weight: '?',
+        number: '15',
+        position: 'Médio',
+        photo: 'images/1568841_luis_silva_20261006163206.png'
+      }
+      ,
+      {
+        teamIndex: 0,
+        slot: 10,
+        name: 'Tiago Mendes',
+        birthDate: '26/02/2002',
+        height: '?',
+        weight: '?',
+        number: '20',
+        position: '?',
+        photo: 'images/tiagomendes.JPG'
+      },
+      {
+        teamIndex: 0,
+        slot: 11,
+        name: 'André Souto',
+        birthDate: '15/07/2004',
+        height: '?',
+        weight: '?',
+        number: '88',
+        position: 'Médio',
+        photo: 'images/1568839_andre_souto_20261006163202.png'
+      },
+      {
+        teamIndex: 0,
+        slot: 12,
+        name: 'Ignacio Vazquez',
+        birthDate: '18/03/2006',
+        height: '182cm',
+        weight: '72kg',
+        number: '21',
+        position: 'Defesa',
+        photo: 'images/ignacio.JPG'
+      },
+      {
+        teamIndex: 0,
+        slot: 13,
+        name: 'Joao Vieira',
+        birthDate: '26/07/1998',
+        height: '188cm',
+        weight: '76kg',
+        number: '19',
+        position: 'ponto de lança',
+        photo: 'images/joaovieira.JPG'
+      },
+      {
+        teamIndex: 0,
+        slot: 14,
+        name: 'Sergio Mendes',
+        birthDate: '?',
+        height: '?',
+        weight: '?',
+        number: '2',
+        position: 'defesa',
+        photo: 'images/sergio.JPG'
+      },
+      {
+        teamIndex: 0,
+        slot: 15,
+        name: 'Marco Rego',
+        birthDate: '12/05/1995',
+        height: '?',
+        weight: '?',
+        number: '14',
+        position: 'defesa esquerdo',
+        photo: 'images/marco.JPG'
+      },
+      {
+        teamIndex: 0,
+        slot: 16,
+        name: 'Xano',
+        birthDate: '24/01/1999',
+        height: '174cm',
+        weight: '72kg',
+        number: '12',
+        position: 'defesa',
+        photo: 'images/xano.JPG'
+      },
+      {
+        teamIndex: 0,
+        slot: 17,
+        name: 'Tiago Silva',
+        birthDate: '15/02/1999',
+        height: '184cm',
+        weight: '78kg',
+        number: '10',
+        position: 'Médio',
+        photo: 'images/tiagosilva.JPG'
+      },
+      {
+        teamIndex: 0,
+        slot: 18,
+        name: 'Pedro Rosario',
+        birthDate: '1/06/1994',
+        height: '182cm',
+        weight: '73kg',
+        number: '8',
+        position: 'Médio',
+        photo: 'images/pedro.JPG'
+      },
+      {
+        teamIndex: 0,
+        slot: 19,
+        name: 'Samu',
+        birthDate: '08/02/2004',
+        height: '?',
+        weight: '',
+        number: '5',
+        position: 'Defesa central',
+        photo: 'images/1572408_samuel_20261012092008.jpg'
+      },
+
+    {
+      teamIndex:0,
+      slot: 20,
+      name: 'Afonso Matias',
+      birthDate: '04/11/2006',
+      height: '?',
+      weight: '?',
+      number: '20',
+      position: 'Médio',
+      photo: 'images/1065561_20230210191805_afonso_matias_1676056685.jpeg'
+    } ,
+    
+    {
+      teamIndex:0,
+      slot: 21,
+      name: 'Kiko',
+      birthDate: '03/12/2005',
+      height: '172cm',
+      weight: '59kg',
+      number: '4',
+      position: 'Defesa',
+      photo: 'images/1568843_kiko_20261006163336.png'
+    } ,
+    {
+      teamIndex:0,
+      slot: 22,
+      name: 'Antonio Soares',
+      birthDate: '12/10/2004',
+      height: '177cm',
+      weight: '71kg',
+      number: '11',
+      position: 'Defesa esquerdo',
+      photo: 'images/1429491_antonio_soares_20260130095203.jpg'
+    } ,
+    {
+      teamIndex:0,
+      slot: 23,
+      name: 'Gabriel Ferreia',
+      birthDate: '14/07/2002',
+      height: '178cm',
+      weight: '?',
+      number: '17',
+      position: 'Medio Centro',
+      photo: 'images/1320970_gabriel_ferreira_20250805202425.png'
+    } ,
+    {
+      teamIndex:0,
+      slot: 24,
+      name: 'Joao Mateus',
+      birthDate: '?',
+      height: '?',
+      weight: '?',
+      number: '?',
+      position: '?',
+      photo: ''
+    }
+
+    ];
+
+    const renderPlayers = () => {
+      const teamIndex = Number(playerTeam.value);
+      const team = teams[teamIndex];
+      if (!team) return;
+
+      teamRosterTitle.textContent = team.name;
+      playersGrid.replaceChildren();
+
+      for (let index = 0; index <   25; index += 1) {
+        const player = players.find((item) => item.teamIndex === teamIndex && item.slot === index);
+        const card = document.createElement('article');
+        card.className = 'player-card';
+
+        const portrait = document.createElement('div');
+        portrait.className = 'player-card__portrait';
+
+        if (player) {
+          const photo = document.createElement('img');
+          photo.className = 'player-card__photo';
+          photo.src = player.photo;
+          photo.alt = player.name;
+          portrait.append(photo);
+        } else {
+          portrait.setAttribute('aria-hidden', 'true');
+        }
+
+        const body = document.createElement('div');
+        body.className = 'player-card__body';
+
+        const name = document.createElement('h3');
+        name.textContent = player ? player.name : 'Nome';
+
+        const details = document.createElement('dl');
+        details.className = 'player-card__details';
+        [
+          ['Data de nascimento', player?.birthDate ?? ''],
+          ['Altura', player?.height ?? ''],
+          ['Peso', player?.weight ?? ''],
+          ['Número', player?.number ?? ''],
+          ['Posição', player?.position ?? '']
+        ].forEach(([label, value]) => {
+          const field = document.createElement('div');
+          const term = document.createElement('dt');
+          term.textContent = label;
+          const description = document.createElement('dd');
+          description.textContent = value;
+          field.append(term, description);
+          details.append(field);
+        });
+
+        body.append(name, details);
+        card.append(portrait, body);
+        playersGrid.append(card);
+      }
+    };
+
+    if (playerCategory) {
+      const updateTeams = () => {
+        const filteredTeams = teams
+          .map((team, index) => ({ ...team, index }))
+          .filter((team) => team.category === playerCategory.value);
+
+        playerTeam.replaceChildren(...filteredTeams.map((team) => {
+          const option = document.createElement('option');
+          option.value = String(team.index);
+          option.textContent = team.name;
+          return option;
+        }));
+
+        renderPlayers();
+      };
+
+      playerCategory.addEventListener('change', updateTeams);
+      playerTeam.addEventListener('change', renderPlayers);
+      updateTeams();
+
+      const slugify = (text) => text.toLowerCase().replace(/·/g, '').trim().replace(/\s+/g, '-');
+
+      const applyHash = () => {
+        const hash = decodeURIComponent(window.location.hash.slice(1));
+        if (!hash) return;
+
+        const teamIndex = teams.findIndex((team) => `${team.category}-${slugify(team.name)}` === hash);
+
+        if (teamIndex !== -1) {
+          playerCategory.value = teams[teamIndex].category;
+          updateTeams();
+          playerTeam.value = String(teamIndex);
+          renderPlayers();
+        } else if ([...playerCategory.options].some((option) => option.value === hash)) {
+          playerCategory.value = hash;
+          updateTeams();
+        }
+      };
+
+      window.addEventListener('hashchange', applyHash);
+      document.querySelectorAll('.dropdown-menu a').forEach((link) => {
+        link.addEventListener('click', () => setTimeout(applyHash, 0));
+      });
+      applyHash();
+    }
+
+    const burger = document.querySelector('.burger');
+    const menu = document.getElementById('menu');
+    const dropdowns = document.querySelectorAll('.nav__dropdown');
+
+    if (burger && menu) {
+      burger.addEventListener('click', () => {
+        const aberto = menu.classList.toggle('ouvert');
+        burger.setAttribute('aria-expanded', aberto);
+      });
+    }
+
+    dropdowns.forEach((dropdown) => {
+      const dropdownButton = dropdown.querySelector('.nav__button');
+
+      if (!dropdownButton) return;
+
+      dropdownButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const shouldOpen = !dropdown.classList.contains('is-open');
+
+        dropdowns.forEach((otherDropdown) => {
+          if (otherDropdown !== dropdown) {
+            otherDropdown.classList.remove('is-open');
+            const otherButton = otherDropdown.querySelector('.nav__button');
+            if (otherButton) {
+              otherButton.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+
+        dropdown.classList.toggle('is-open', shouldOpen);
+        dropdownButton.setAttribute('aria-expanded', String(shouldOpen));
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      dropdowns.forEach((dropdown) => {
+        const button = dropdown.querySelector('.nav__button');
+        const clickedInsideDropdown = dropdown.contains(event.target);
+        const clickedButton = button && (event.target === button || button.contains(event.target));
+
+        if (!clickedInsideDropdown || clickedButton) {
+          return;
+        }
+
+        dropdown.classList.remove('is-open');
+        if (button) {
+          button.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

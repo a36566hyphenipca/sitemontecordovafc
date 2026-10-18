@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotos e vídeos – Monte Córdova FC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__interieur conteneur">
+      <a class="logo" href="index.html" aria-label="Página inicial do Monte Córdova FC">
+        <span class="logo__ecusson" aria-hidden="true"></span>
+        <span class="logo__text">Monte Córdova FC</span>
+      </a>
+
+      <button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+
+      <nav class="nav" id="menu" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Equipas <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="equipas.html#seniores">Seniores</a>
+              <a href="equipas.html#veteranos">Veteranos</a>
+              <a href="equipas.html#juniores">Jun A · S19</a>
+              <a href="equipas.html#juniores">Jun B · S17</a>
+              <a href="equipas.html#juniores">Jun C · S15</a>
+              <a href="equipas.html#juniores">Jun D · S13</a>
+              <a href="equipas.html#juniores">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="equipas.html#futebol-9">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="equipas.html#futebol-7">Jun D · S13</a>
+              <a href="equipas.html#futebol-7">Jun D · S12</a>
+              <a href="equipas.html#futebol-7">Jun E · S10</a>
+              <a href="equipas.html#futebol-7">Jun E · S11</a>
+              <a href="equipas.html#futebol-7">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Jogadores <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="jogadores.html#futebol-11-seniores">Seniores</a>
+              <a href="jogadores.html#futebol-11-veteranos">Veteranos</a>
+              <a href="jogadores.html#futebol-11-jun-a-s19">Jun A · S19</a>
+              <a href="jogadores.html#futebol-11-jun-b-s17">Jun B · S17</a>
+              <a href="jogadores.html#futebol-11-jun-c-s15">Jun C · S15</a>
+              <a href="jogadores.html#futebol-11-jun-d-s13">Jun D · S13</a>
+              <a href="jogadores.html#futebol-11-jun-e-s12">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="jogadores.html#futebol-9-jun-d-s13">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="jogadores.html#futebol-7-jun-d-s13">Jun D · S13</a>
+              <a href="jogadores.html#futebol-7-jun-d-s12">Jun D · S12</a>
+              <a href="jogadores.html#futebol-7-jun-e-s10">Jun E · S10</a>
+              <a href="jogadores.html#futebol-7-jun-e-s11">Jun E · S11</a>
+              <a href="jogadores.html#futebol-7-jun-f-s9">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Calendário <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="calendario.html#seniores">Seniores</a>
+              <a href="calendario.html#veteranos">Veteranos</a>
+              <a href="calendario.html#juniores">Jun A · S19</a>
+              <a href="calendario.html#juniores">Jun B · S17</a>
+              <a href="calendario.html#juniores">Jun C · S15</a>
+              <a href="calendario.html#juniores">Jun D · S13</a>
+              <a href="calendario.html#juniores">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="calendario.html#futebol-9">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="calendario.html#futebol-7">Jun D · S13</a>
+              <a href="calendario.html#futebol-7">Jun D · S12</a>
+              <a href="calendario.html#futebol-7">Jun E · S10</a>
+              <a href="calendario.html#futebol-7">Jun E · S11</a>
+              <a href="calendario.html#futebol-7">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <a href="noticias.html">Notícias</a>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Fotos e vídeos <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="#">Seniores</a>
+              <a href="#">Veteranos</a>
+              <a href="#">Jun A · S19</a>
+              <a href="#">Jun B · S17</a>
+              <a href="#">Jun C · S15</a>
+              <a href="#">Jun D · S13</a>
+              <a href="#">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="#">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="#">Jun D · S13</a>
+              <a href="#">Jun D · S12</a>
+              <a href="#">Jun E · S10</a>
+              <a href="#">Jun E · S11</a>
+              <a href="#">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Staff <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="staffs.html#seniores">Seniores</a>
+              <a href="staffs.html#veteranos">Veteranos</a>
+              <a href="staffs.html#juniores">Jun A · S19</a>
+              <a href="staffs.html#juniores">Jun B · S17</a>
+              <a href="staffs.html#juniores">Jun C · S15</a>
+              <a href="staffs.html#juniores">Jun D · S13</a>
+              <a href="staffs.html#juniores">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="staffs.html#futebol-9">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="staffs.html#futebol-7">Jun D · S13</a>
+              <a href="staffs.html#futebol-7">Jun D · S12</a>
+              <a href="staffs.html#futebol-7">Jun E · S10</a>
+              <a href="staffs.html#futebol-7">Jun E · S11</a>
+              <a href="staffs.html#futebol-7">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Palmarés <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="index.html#palmares">Palmarés</a>
+              <a href="index.html#seniores">Seniores</a>
+              <a href="index.html#veteranos">Veteranos</a>
+              <a href="index.html#juniores">Jun A · S19</a>
+              <a href="index.html#juniores">Jun B · S17</a>
+              <a href="index.html#juniores">Jun C · S15</a>
+              <a href="index.html#juniores">Jun D · S13</a>
+              <a href="index.html#juniores">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="index.html#futebol-9">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="index.html#futebol-7">Jun D · S13</a>
+              <a href="index.html#futebol-7">Jun D · S12</a>
+              <a href="index.html#futebol-7">Jun E · S10</a>
+              <a href="index.html#futebol-7">Jun E · S11</a>
+              <a href="index.html#futebol-7">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="conteneur page-header">
+      <p class="eyebrow">Momentos do clube</p>
+      <h1>Fotos e vídeos</h1>
+    </div>
+
+    <section class="section-box">
+      <div class="conteneur">
+        <nav class="media-filter" aria-label="Filtrar media">
+          <button class="media-filter__button is-active" type="button" data-filter="all">Todas</button>
+          <button class="media-filter__button" type="button" data-filter="photo">Fotos</button>
+          <button class="media-filter__button" type="button" data-filter="video">Vídeos</button>
+          <button class="media-filter__button" type="button" data-filter="match">Matchs</button>
+        </nav>
+
+        <section class="media-match" data-media-group>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Futebol 11 · Seniores</p>
+              <h2>Jornada 1 · Monte Córdova FC vs AB Refojos</h2>
+            </div>
+            <span>10 fotos</span>
+          </div>
+          <div class="media-gallery">
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/refojos/38-IMG_0156.jpg" alt="Foto 1 do jogo Monte Córdova FC vs AB Refojos, Jornada 1" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 1/10</span><h3>Jornada 1 · vs AB Refojos</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/refojos/40-IMG_0152.jpg" alt="Foto 2 do jogo Monte Córdova FC vs AB Refojos, Jornada 1" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 2/10</span><h3>Jornada 1 · vs AB Refojos</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/refojos/41-IMG_0150.jpg" alt="Foto 3 do jogo Monte Córdova FC vs AB Refojos, Jornada 1" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 3/10</span><h3>Jornada 1 · vs AB Refojos</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/refojos/51-IMG_0123.jpg" alt="Foto 4 do jogo Monte Córdova FC vs AB Refojos, Jornada 1" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 4/10</span><h3>Jornada 1 · vs AB Refojos</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/refojos/53-IMG_0119.jpg" alt="Foto 5 do jogo Monte Córdova FC vs AB Refojos, Jornada 1" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 5/10</span><h3>Jornada 1 · vs AB Refojos</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/refojos/59-IMG_0095.jpg" alt="Foto 6 do jogo Monte Córdova FC vs AB Refojos, Jornada 1" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 6/10</span><h3>Jornada 1 · vs AB Refojos</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/refojos/63-IMG_0073.jpg" alt="Foto 7 do jogo Monte Córdova FC vs AB Refojos, Jornada 1" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 7/10</span><h3>Jornada 1 · vs AB Refojos</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/refojos/67-IMG_0058.jpg" alt="Foto 8 do jogo Monte Córdova FC vs AB Refojos, Jornada 1" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 8/10</span><h3>Jornada 1 · vs AB Refojos</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/refojos/81-IMG_0014.jpg" alt="Foto 9 do jogo Monte Córdova FC vs AB Refojos, Jornada 1" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 9/10</span><h3>Jornada 1 · vs AB Refojos</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/refojos/photonoticias.jpg" alt="Foto 10 do jogo Monte Córdova FC vs AB Refojos, Jornada 1" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 10/10</span><h3>Jornada 1 · vs AB Refojos</h3></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="media-match" data-media-group>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Futebol 11 · Seniores</p>
+              <h2>Jornada 2 · AR Sequeiró vs Monte Córdova FC</h2>
+            </div>
+            <span>14 fotos</span>
+          </div>
+          <div class="media-gallery">
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/43-IMG_0145.jpg" alt="Foto 1 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 1/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/48-IMG_0166.jpg" alt="Foto 2 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 2/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/50-IMG_0170.jpg" alt="Foto 3 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 3/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/51-IMG_0178.jpg" alt="Foto 4 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 4/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/53-IMG_0185.jpg" alt="Foto 5 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 5/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/59-IMG_0207.jpg" alt="Foto 6 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 6/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/60-IMG_0214.jpg" alt="Foto 7 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 7/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/68-IMG_0241.jpg" alt="Foto 8 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 8/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/69-IMG_0244.jpg" alt="Foto 9 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 9/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/70-IMG_0246.jpg" alt="Foto 10 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 10/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/71-IMG_0258.jpg" alt="Foto 11 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 11/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/74-IMG_0265.jpg" alt="Foto 12 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 12/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/78-IMG_0279.jpg" alt="Foto 13 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 13/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/sequeiro/noticias.jpg" alt="Foto 14 do jogo AR Sequeiró vs Monte Córdova FC, Jornada 2" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 14/14</span><h3>Jornada 2 · vs AR Sequeiró</h3></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="media-match" data-media-group>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Seniores · 04 Out 2026</p>
+              <h2>Jornada 3 · CCR Raimonda vs Monte Córdova FC</h2>
+            </div>
+            <span>8 fotos</span>
+          </div>
+          <div class="media-gallery">
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/raimonda/42-IMG_0135.jpg" alt="Foto 1 do jogo CCR Raimonda vs Monte Córdova FC, Jornada 3" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 1/8</span><h3>Jornada 3 · vs CCR Raimonda</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/raimonda/52-IMG_0159.jpg" alt="Foto 2 do jogo CCR Raimonda vs Monte Córdova FC, Jornada 3" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 2/8</span><h3>Jornada 3 · vs CCR Raimonda</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/raimonda/65-IMG_0213.jpg" alt="Foto 3 do jogo CCR Raimonda vs Monte Córdova FC, Jornada 3" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 3/8</span><h3>Jornada 3 · vs CCR Raimonda</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/raimonda/71-IMG_0228.jpg" alt="Foto 4 do jogo CCR Raimonda vs Monte Córdova FC, Jornada 3" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 4/8</span><h3>Jornada 3 · vs CCR Raimonda</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/raimonda/73-IMG_0235.jpg" alt="Foto 5 do jogo CCR Raimonda vs Monte Córdova FC, Jornada 3" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 5/8</span><h3>Jornada 3 · vs CCR Raimonda</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/raimonda/77-IMG_0249.jpg" alt="Foto 6 do jogo CCR Raimonda vs Monte Córdova FC, Jornada 3" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 6/8</span><h3>Jornada 3 · vs CCR Raimonda</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/raimonda/79-IMG_0254.jpg" alt="Foto 7 do jogo CCR Raimonda vs Monte Córdova FC, Jornada 3" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 7/8</span><h3>Jornada 3 · vs CCR Raimonda</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/raimonda/noticias.jpg" alt="Foto 8 do jogo CCR Raimonda vs Monte Córdova FC, Jornada 3" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 8/8</span><h3>Jornada 3 · vs CCR Raimonda</h3></div>
+            </article>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="conteneur footer__grid">
+      <div>
+        <h3>Monte Córdova FC</h3>
+        <p>Rua do Campo de Futebol<br>Monte Córdova, Santo Tirso</p>
+      </div>
+
+      <div>
+        <h3>Contactos</h3>
+        <p><a href="mailto:montcordova-fc@sapo.pt">montcordova-fc@sapo.pt</a><br><a href="tel:+351918849250">918 849 250</a></p>
+      </div>
+
+      <div>
+        <h3>Redes sociais</h3>
+        <div class="socials">
+          <a href="https://www.facebook.com/MonteCordovaFC/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/montecordovafutebolclube/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__sponsors" aria-label="Patrocínios">
+      <strong>Sponsors</strong>
+      <span>Partner 1</span>
+      <span>Partner 2</span>
+      <span>Partner 3</span>
+    </div>
+    <p class="footer__bas">© 2026 Monte Córdova Futebol Clube · Todos os direitos reservados</p>
+    <p class="footer__credito">Fotografias: Iara Monteiro</p>
+  </footer>
+
+  <script>
+    const burger = document.querySelector('.burger');
+    const menu = document.getElementById('menu');
+    const dropdowns = document.querySelectorAll('.nav__dropdown');
+
+    if (burger && menu) {
+      burger.addEventListener('click', () => {
+        const ouvert = menu.classList.toggle('ouvert');
+        burger.setAttribute('aria-expanded', ouvert);
+      });
+    }
+
+    dropdowns.forEach((dropdown) => {
+      const dropdownButton = dropdown.querySelector('.nav__button');
+      if (!dropdownButton) return;
+
+      dropdownButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const shouldOpen = !dropdown.classList.contains('is-open');
+
+        dropdowns.forEach((otherDropdown) => {
+          if (otherDropdown !== dropdown) {
+            otherDropdown.classList.remove('is-open');
+            const otherButton = otherDropdown.querySelector('.nav__button');
+            if (otherButton) {
+              otherButton.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+
+        dropdown.classList.toggle('is-open', shouldOpen);
+        dropdownButton.setAttribute('aria-expanded', String(shouldOpen));
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      dropdowns.forEach((dropdown) => {
+        const button = dropdown.querySelector('.nav__button');
+        const clickedInsideDropdown = dropdown.contains(event.target);
+        const clickedButton = button && (event.target === button || button.contains(event.target));
+
+        if (!clickedInsideDropdown || clickedButton) {
+          return;
+        }
+
+        dropdown.classList.remove('is-open');
+        if (button) {
+          button.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    const mediaButtons = document.querySelectorAll('.media-filter__button');
+    const mediaCards = document.querySelectorAll('.media-card');
+    const mediaGroups = document.querySelectorAll('[data-media-group]');
+
+    mediaButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+
+        mediaButtons.forEach((item) => item.classList.toggle('is-active', item === button));
+
+        mediaCards.forEach((card) => {
+          const match = filter === 'all' || card.dataset.type.split(/\s+/).includes(filter);
+          card.classList.toggle('is-hidden', !match);
+        });
+
+        mediaGroups.forEach((group) => {
+          const hasVisibleCards = group.querySelector('.media-card:not(.is-hidden)');
+          group.classList.toggle('is-hidden', !hasVisibleCards);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
