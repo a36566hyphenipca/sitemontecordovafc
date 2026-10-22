@@ -11,7 +11,7 @@ window.MONTE_CORDOVA_DATA = {
     { cat: 'seniores', label: 'Seniores', jornada: '9.ª Jornada', casa: 'SC duas Igrejas', fora: 'Monte Cordova FC', dateISO: '2026-11-29', time: '15:30', data: '29/11 · 15:30', local: 'Complexo Desportivo' },
     { cat: 'seniores', label: 'Seniores', jornada: '10.ª Jornada', casa: 'Monte Cordova FC', fora: 'ADC Frazão', dateISO: '2026-12-06', time: '15:30', data: '06/12 · 15:30', local: 'Campo de Monte Cordova' },
     { cat: 'seniores', label: 'Seniores', jornada: '11.ª Jornada', casa: 'GD Leões De Seroa', fora: 'Monte Cordova FC', dateISO: '2026-12-13', time: '15:30', data: '13/12 · 15:30', local: 'Complexo Desportivo de Seroa' },
-    { cat: 'seniores', label: 'Seniores', jornada: '12.ª Jornada', casa: 'Monte Cordova FC', fora: 'Fc', dateISO: '2026-12-20', time: '15:30', data: '20/12 · 15:30', local: 'Campo de Monte Cordova' },
+    { cat: 'seniores', label: 'Seniores', jornada: '12.ª Jornada', casa: 'Monte Cordova FC', fora: 'FC Cristelo', dateISO: '2026-12-20', time: '15:30', data: '20/12 · 15:30', local: 'Campo de Monte Cordova' },
     { cat: 'seniores', label: 'Seniores', jornada: '13.ª Jornada', casa: 'GDRC São Luis', fora: 'Monte Cordova FC', dateISO: '2027-01-10', time: '15:30', data: '10/01 · 15:30', local: 'Complexo Desportivo São Luis' },
     { cat: 'seniores', label: 'Seniores', jornada: '14.ª Jornada', casa: 'AD Refojos', fora: 'Monte Cordova FC', dateISO: '2027-01-17', time: '15:30', data: '17/01 · 15:30', local: 'Parque Desportivo de Refojos' },
     { cat: 'seniores', label: 'Seniores', jornada: '15.ª Jornada', casa: 'Monte Cordova FC', fora: 'AR Sequeirô', dateISO: '2027-01-24', time: '15:30', data: '24/01 · 15:30', local: 'Campo de Monte Cordova' },
@@ -33,7 +33,7 @@ window.MONTE_CORDOVA_DATA = {
       cat: 'seniores', team: 'futebol-11-seniores',
       home: 'Penamaior', away: 'Monte Cordova FC', score: '0-0',
       title: 'na 5.ª jornada',
-      summary: '',
+      summary: 'kjsdhkfkefkskfbskj',
       outcome: 'E',
       image: 'images/refojos/photonoticias.jpg'
     },
