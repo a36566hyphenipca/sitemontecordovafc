@@ -56,7 +56,7 @@ window.MONTE_CORDOVA_DATA = {
    cat: 'juniores',team:'Futebol-11-SUB17',
    home:'GDC Ferreira',away:'Monte Cordova',score:'5-0',
       title:'Defeita na primeira Jornada',
-      outcome:'E'
+      outcome:'D'
     },
     {
       dateISO: '2026-10-25',
