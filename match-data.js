@@ -33,7 +33,7 @@ window.MONTE_CORDOVA_DATA = {
       cat: 'seniores', team: 'futebol-11-seniores',
       home: 'Penamaior', away: 'Monte Cordova FC', score: '0-0',
       title: 'na 5.ª jornada',
-      summary: 'kjsdhkfkefkskfbskj',
+      summary: 'kjsskfbskj',
       outcome: 'E',
       image: 'images/refojos/photonoticias.jpg'
     },
