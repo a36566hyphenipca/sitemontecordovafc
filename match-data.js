@@ -35,7 +35,7 @@ window.MONTE_CORDOVA_DATA = {
       title: 'na 5.ª jornada',
       summary: '',
       outcome: '?',
-      image: 'images/penamaior/photonoticias'
+      image: 'images/penamaior/'
     },
     {
       dateISO: '2026-10-17',
