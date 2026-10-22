@@ -32,25 +32,17 @@ window.MONTE_CORDOVA_DATA = {
       dateISO: '2026-10-25',
       cat: 'seniores', team: 'futebol-11-seniores',
       home: 'Penamaior', away: 'Monte Cordova FC', score: '0-0',
-      title: 'na 5.ª jornada',
+      title: 'na 4.ª jornada',
       summary: '',
       outcome: 'V',
       image: 'images/refojos/photonoticias.jpg'
     },
-    {
-      dateISO: '2026-10-17',
-      cat: 'seniores', team: 'futebol-11-seniores',
-      home: 'Monte Córdova FC', away: 'FC Termas São Vicente', score: '5–2',
-      title: 'Monte Córdova vence por 5–2 na 4.ª jornada',
-      summary: 'O Monte Córdova FC conquistou uma vitória por 5–2 na 4.ª jornada. Parabéns a todos os jogadores e à equipa técnica!',
-      outcome: 'V',
-      image: 'images/refojos/photonoticias.jpg'
-    },
+   
     {
       dateISO: '2026-10-10',
       cat: 'seniores', team: 'futebol-11-seniores',
       home: 'CCR Raimonda', away: 'Monte Córdova FC', score: '0–0',
-      title: 'Empate sem golos para o Monte Córdova FC',
+      title: 'Empate sem golos para o Monte Córdova FC , na 3.ª Jornada',
       summary: 'O encontro terminou 0–0 e cada equipa somou um ponto. O Monte Córdova FC segue focado nos próximos desafios. Força, Monte!',
       outcome: 'E',
       image: 'images/raimonda/noticias.jpg'
@@ -59,7 +51,7 @@ window.MONTE_CORDOVA_DATA = {
       dateISO: '2026-09-27',
       cat: 'seniores', team: 'futebol-11-seniores',
       home: 'AR Sequeiró', away: 'Monte Córdova FC', score: '1–4',
-      title: 'Vitória expressiva por 4–1',
+      title: 'Vitória expressiva por 4–1, na 2.ª Jornada',
       summary: 'O Monte Córdova FC conquistou uma vitória por 4–1 e somou três pontos. Parabéns a todo o grupo pelo resultado e pelo trabalho em equipa!',
       outcome: 'V',
       image: 'images/sequeiro/noticias.jpg'
@@ -68,7 +60,7 @@ window.MONTE_CORDOVA_DATA = {
       dateISO: '2026-09-20',
       cat: 'seniores', team: 'futebol-11-seniores',
       home: 'Monte Córdova FC', away: 'AB Refojos', score: '3–3',
-      title: 'Estreia com seis golos e empate 3–3',
+      title: 'Estreia com seis golos e empate 3–3, na 1.ª Jornada',
       summary: 'A primeira jornada terminou com um empate a três golos. O Monte Córdova FC começou a época a somar um ponto num encontro cheio de golos.',
       outcome: 'E',
       image: 'images/refojos/photonoticias.jpg'
