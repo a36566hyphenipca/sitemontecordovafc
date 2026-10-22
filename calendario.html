@@ -99,31 +99,57 @@
             </div>
           </div>
         </div>
-        <a href="noticias.html">Notícias</a>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button">Notícias <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="noticias.html#futebol-11-seniores">Seniores</a>
+              <a href="noticias.html#futebol-11-veteranos">Veteranos</a>
+              <a href="noticias.html#futebol-11-jun-a-s19">Jun A · S19</a>
+              <a href="noticias.html#futebol-11-jun-b-s17">Jun B · S17</a>
+              <a href="noticias.html#futebol-11-jun-c-s15">Jun C · S15</a>
+              <a href="noticias.html#futebol-11-jun-d-s13">Jun D · S13</a>
+              <a href="noticias.html#futebol-11-jun-e-s12">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="noticias.html#futebol-9-jun-d-s13">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="noticias.html#futebol-7-jun-d-s13">Jun D · S13</a>
+              <a href="noticias.html#futebol-7-jun-d-s12">Jun D · S12</a>
+              <a href="noticias.html#futebol-7-jun-e-s10">Jun E · S10</a>
+              <a href="noticias.html#futebol-7-jun-e-s11">Jun E · S11</a>
+              <a href="noticias.html#futebol-7-jun-f-s9">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
         <div class="nav__dropdown">
           <button class="nav__button" type="button">Fotos e vídeos <span>▾</span></button>
           <div class="dropdown-menu">
             <div class="dropdown-group">
               <span class="dropdown-group__title">Futebol 11</span>
-              <a href="media.html">Seniores</a>
-              <a href="media.html">Veteranos</a>
-              <a href="media.html">Jun A · S19</a>
-              <a href="media.html">Jun B · S17</a>
-              <a href="media.html">Jun C · S15</a>
-              <a href="media.html">Jun D · S13</a>
-              <a href="media.html">Jun E · S12</a>
+              <a href="media.html#futebol-11-seniores">Seniores</a>
+              <a href="media.html#futebol-11-veteranos">Veteranos</a>
+              <a href="media.html#futebol-11-jun-a-s19">Jun A · S19</a>
+              <a href="media.html#futebol-11-jun-b-s17">Jun B · S17</a>
+              <a href="media.html#futebol-11-jun-c-s15">Jun C · S15</a>
+              <a href="media.html#futebol-11-jun-d-s13">Jun D · S13</a>
+              <a href="media.html#futebol-11-jun-e-s12">Jun E · S12</a>
             </div>
             <div class="dropdown-group">
               <span class="dropdown-group__title">Futebol 9</span>
-              <a href="media.html">Jun D · S13</a>
+              <a href="media.html#futebol-9-jun-d-s13">Jun D · S13</a>
             </div>
             <div class="dropdown-group">
               <span class="dropdown-group__title">Futebol 7</span>
-              <a href="media.html">Jun D · S13</a>
-              <a href="media.html">Jun D · S12</a>
-              <a href="media.html">Jun E · S10</a>
-              <a href="media.html">Jun E · S11</a>
-              <a href="media.html">Jun F · S9</a>
+              <a href="media.html#futebol-7-jun-d-s13">Jun D · S13</a>
+              <a href="media.html#futebol-7-jun-d-s12">Jun D · S12</a>
+              <a href="media.html#futebol-7-jun-e-s10">Jun E · S10</a>
+              <a href="media.html#futebol-7-jun-e-s11">Jun E · S11</a>
+              <a href="media.html#futebol-7-jun-f-s9">Jun F · S9</a>
             </div>
           </div>
         </div>
@@ -203,7 +229,7 @@
       </div>
     </div>
 
-    <section class="section-box">
+    <section class="section-box" id="resultsSection">
       <div class="conteneur">
         <div class="section-heading">
           <h2>Últimos resultados</h2>
@@ -258,11 +284,44 @@
 
   const conteneur = document.getElementById('jogos');
   const select = document.getElementById('calendarCategory');
+  const calendarResults = document.getElementById('calendarResults');
+  const resultsSection = document.getElementById('resultsSection');
+  const monthNames = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+
+  function formatResultDate(dateISO) {
+    const [year, month, day] = dateISO.split('-').map(Number);
+    return `${String(day).padStart(2, '0')} ${monthNames[month - 1]}`;
+  }
+
+  function resultDate(dateISO) {
+    const [year, month, day] = dateISO.split('-').map(Number);
+    return new Date(year, month - 1, day);
+  }
+
+  function renderResults(cat) {
+    const lista = window.MONTE_CORDOVA_DATA.results
+      .filter((result) => cat === 'todos' || result.cat === cat)
+      .filter((result) => resultDate(result.dateISO) <= new Date())
+      .sort((first, second) => second.dateISO.localeCompare(first.dateISO));
+
+    // pas de résultats pour cette catégorie : on cache toute la section
+    resultsSection.hidden = lista.length === 0;
+
+    calendarResults.innerHTML = lista.map((result) => `
+      <li>
+        <span class="date">${formatResultDate(result.dateISO)}</span>
+        <span class="versus">${result.home} <strong class="score">${result.score}</strong> ${result.away}</span>
+        <span class="result ${result.outcome === 'V' ? 'result--win' : ''}">${result.outcome}</span>
+      </li>
+    `).join('');
+  }
 
   function render(cat) {
     const lista = cat === 'todos' ? jogos : jogos.filter(item => item.cat === cat);
 
-    conteneur.innerHTML = lista.map((jogo) => `
+    conteneur.innerHTML = lista.length === 0
+      ? '<p class="empty-state">O calendário desta categoria ainda não está disponível.</p>'
+      : lista.map((jogo) => `
       <article class="calendar-item">
         <div class="calendar-item__meta">
           <span>${jogo.label}</span>
@@ -279,6 +338,8 @@
         </div>
       </article>
     `).join('');
+
+    renderResults(cat);
   }
 
   if (select) {
@@ -287,8 +348,6 @@
     });
   }
 
-  render('todos');
-
   function applyHash() {
     const cat = decodeURIComponent(window.location.hash.slice(1));
     if (!cat || ![...select.options].some((option) => option.value === cat)) return;
@@ -296,36 +355,12 @@
     render(cat);
   }
 
+  render('todos');
   window.addEventListener('hashchange', applyHash);
   document.querySelectorAll('.dropdown-menu a').forEach((link) => {
     link.addEventListener('click', () => setTimeout(applyHash, 0));
   });
   applyHash();
-
-  const calendarResults = document.getElementById('calendarResults');
-  const monthNames = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
-
-  function formatResultDate(dateISO) {
-    const [year, month, day] = dateISO.split('-').map(Number);
-    return `${String(day).padStart(2, '0')} ${monthNames[month - 1]}`;
-  }
-
-  function resultDate(dateISO) {
-    const [year, month, day] = dateISO.split('-').map(Number);
-    return new Date(year, month - 1, day);
-  }
-
-  calendarResults.innerHTML = window.MONTE_CORDOVA_DATA.results
-    .filter((result) => resultDate(result.dateISO) <= new Date())
-    .slice()
-    .sort((first, second) => second.dateISO.localeCompare(first.dateISO))
-    .map((result) => `
-      <li>
-        <span class="date">${formatResultDate(result.dateISO)}</span>
-        <span class="versus">${result.home} <strong class="score">${result.score}</strong> ${result.away}</span>
-        <span class="result ${result.outcome === 'V' ? 'result--win' : ''}">${result.outcome}</span>
-      </li>
-    `).join('');
 
   const burger = document.querySelector('.burger');
   const menu = document.getElementById('menu');
