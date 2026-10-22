@@ -31,11 +31,11 @@ window.MONTE_CORDOVA_DATA = {
     {
       dateISO: '2026-10-25',
       cat: 'seniores', team: 'futebol-11-seniores',
-      home: 'Penamaior', away: 'Monte Cordova FC', score: '?-?',
+      home: 'Penamaior', away: 'Monte Cordova FC', score: '0-0',
       title: 'na 5.ª jornada',
       summary: '',
-      outcome: '?',
-      image: 'images/penamaior/'
+      outcome: 'V',
+      image: 'images/refojos/photonoticias.jpg'
     },
     {
       dateISO: '2026-10-17',
