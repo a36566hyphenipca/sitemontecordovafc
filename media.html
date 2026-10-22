@@ -99,31 +99,57 @@
             </div>
           </div>
         </div>
-        <a href="noticias.html">Notícias</a>
         <div class="nav__dropdown">
-          <button class="nav__button" type="button">Fotos e vídeos <span>▾</span></button>
+          <button class="nav__button" type="button">Notícias <span>▾</span></button>
           <div class="dropdown-menu">
             <div class="dropdown-group">
               <span class="dropdown-group__title">Futebol 11</span>
-              <a href="#">Seniores</a>
-              <a href="#">Veteranos</a>
-              <a href="#">Jun A · S19</a>
-              <a href="#">Jun B · S17</a>
-              <a href="#">Jun C · S15</a>
-              <a href="#">Jun D · S13</a>
-              <a href="#">Jun E · S12</a>
+              <a href="noticias.html#futebol-11-seniores">Seniores</a>
+              <a href="noticias.html#futebol-11-veteranos">Veteranos</a>
+              <a href="noticias.html#futebol-11-jun-a-s19">Jun A · S19</a>
+              <a href="noticias.html#futebol-11-jun-b-s17">Jun B · S17</a>
+              <a href="noticias.html#futebol-11-jun-c-s15">Jun C · S15</a>
+              <a href="noticias.html#futebol-11-jun-d-s13">Jun D · S13</a>
+              <a href="noticias.html#futebol-11-jun-e-s12">Jun E · S12</a>
             </div>
             <div class="dropdown-group">
               <span class="dropdown-group__title">Futebol 9</span>
-              <a href="#">Jun D · S13</a>
+              <a href="noticias.html#futebol-9-jun-d-s13">Jun D · S13</a>
             </div>
             <div class="dropdown-group">
               <span class="dropdown-group__title">Futebol 7</span>
-              <a href="#">Jun D · S13</a>
-              <a href="#">Jun D · S12</a>
-              <a href="#">Jun E · S10</a>
-              <a href="#">Jun E · S11</a>
-              <a href="#">Jun F · S9</a>
+              <a href="noticias.html#futebol-7-jun-d-s13">Jun D · S13</a>
+              <a href="noticias.html#futebol-7-jun-d-s12">Jun D · S12</a>
+              <a href="noticias.html#futebol-7-jun-e-s10">Jun E · S10</a>
+              <a href="noticias.html#futebol-7-jun-e-s11">Jun E · S11</a>
+              <a href="noticias.html#futebol-7-jun-f-s9">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button" aria-current="page">Fotos e vídeos <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="media.html#futebol-11-seniores">Seniores</a>
+              <a href="media.html#futebol-11-veteranos">Veteranos</a>
+              <a href="media.html#futebol-11-jun-a-s19">Jun A · S19</a>
+              <a href="media.html#futebol-11-jun-b-s17">Jun B · S17</a>
+              <a href="media.html#futebol-11-jun-c-s15">Jun C · S15</a>
+              <a href="media.html#futebol-11-jun-d-s13">Jun D · S13</a>
+              <a href="media.html#futebol-11-jun-e-s12">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="media.html#futebol-9-jun-d-s13">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="media.html#futebol-7-jun-d-s13">Jun D · S13</a>
+              <a href="media.html#futebol-7-jun-d-s12">Jun D · S12</a>
+              <a href="media.html#futebol-7-jun-e-s10">Jun E · S10</a>
+              <a href="media.html#futebol-7-jun-e-s11">Jun E · S11</a>
+              <a href="media.html#futebol-7-jun-f-s9">Jun F · S9</a>
             </div>
           </div>
         </div>
@@ -190,6 +216,16 @@
     <div class="conteneur page-header">
       <p class="eyebrow">Momentos do clube</p>
       <h1>Fotos e vídeos</h1>
+      <div class="team-switcher">
+        <label class="team-switcher__label" for="mediaCategory">Categoria</label>
+        <select id="mediaCategory" class="team-switcher__select" aria-label="Escolher categoria">
+          <option value="futebol-11" selected>Futebol 11</option>
+          <option value="futebol-9">Futebol 9</option>
+          <option value="futebol-7">Futebol 7</option>
+        </select>
+        <label class="team-switcher__label" for="mediaTeam">Equipa</label>
+        <select id="mediaTeam" class="team-switcher__select" aria-label="Escolher equipa"></select>
+      </div>
     </div>
 
     <section class="section-box">
@@ -201,7 +237,7 @@
           <button class="media-filter__button" type="button" data-filter="match">Matchs</button>
         </nav>
 
-        <section class="media-match" data-media-group>
+        <section class="media-match" data-media-group data-team="futebol-11-seniores">
           <div class="section-heading">
             <div>
               <p class="eyebrow">Futebol 11 · Seniores</p>
@@ -253,7 +289,7 @@
           </div>
         </section>
 
-        <section class="media-match" data-media-group>
+        <section class="media-match" data-media-group data-team="futebol-11-seniores">
           <div class="section-heading">
             <div>
               <p class="eyebrow">Futebol 11 · Seniores</p>
@@ -321,7 +357,7 @@
           </div>
         </section>
 
-        <section class="media-match" data-media-group>
+        <section class="media-match" data-media-group data-team="futebol-11-seniores">
           <div class="section-heading">
             <div>
               <p class="eyebrow">Seniores · 04 Out 2026</p>
@@ -365,6 +401,75 @@
           </div>
         </section>
 
+    <section class="media-match" data-media-group data-team="futebol-11-seniores">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Futebol 11 · Seniores</p>
+              <h2>Jornada 4 · Penamaior vs Monte Córdova FC</h2>
+            </div>
+            <span>14 fotos</span>
+          </div>
+          <div class="media-gallery">
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamaior/" alt="Foto 1 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 1/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamaior" alt="Foto 2 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 2/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamaior" alt="Foto 3 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 3/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamaior/" alt="Foto 4 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 4/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamaior/" alt="Foto 5 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 5/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamaior/" alt="Foto 6 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 6/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamaior/" alt="Foto 7 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 7/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamaior/" alt="Foto 8 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 8/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamaior/" alt="Foto 9 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 9/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamaior/" alt="Foto 10 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 10/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamaior/" alt="Foto 11 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 11/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamaior/" alt="Foto 12 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 12/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamaior/" alt="Foto 13 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 13/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+            <article class="media-card" data-type="photo match">
+              <img class="media-card__image" src="images/penamoir/noticias.jpg" alt="Foto 14 do jogo Penamaior vs Monte Córdova FC, Jornada 4" loading="lazy">
+              <div class="media-card__overlay"><span class="media-card__type">Foto 14/14</span><h3>Jornada 4 · vs Penamaior</h3></div>
+            </article>
+          </div>
+        </section>
+        <p class="empty-state" id="mediaEmpty" hidden>Ainda não há fotos nem vídeos para esta equipa.</p>
+
       </div>
     </section>
   </main>
@@ -400,6 +505,7 @@
     <p class="footer__credito">Fotografias: Iara Monteiro</p>
   </footer>
 
+  <script src="equipas-data.js"></script>
   <script>
     const burger = document.querySelector('.burger');
     const menu = document.getElementById('menu');
@@ -457,23 +563,43 @@
     const mediaButtons = document.querySelectorAll('.media-filter__button');
     const mediaCards = document.querySelectorAll('.media-card');
     const mediaGroups = document.querySelectorAll('[data-media-group]');
+    const mediaEmpty = document.getElementById('mediaEmpty');
+    const mediaCategory = document.getElementById('mediaCategory');
+    const mediaTeam = document.getElementById('mediaTeam');
+
+    let currentFilter = 'all';
+    let currentTeam = '';
+
+    // affiche seulement les photos de l'équipe choisie, filtrées par type (photos / vidéos / matchs)
+    function applyMediaFilters() {
+      mediaCards.forEach((card) => {
+        const match = currentFilter === 'all' || card.dataset.type.split(/\s+/).includes(currentFilter);
+        card.classList.toggle('is-hidden', !match);
+      });
+
+      let visibleGroups = 0;
+      mediaGroups.forEach((group) => {
+        const sameTeam = group.dataset.team === currentTeam;
+        const hasVisibleCards = group.querySelector('.media-card:not(.is-hidden)');
+        const show = sameTeam && hasVisibleCards;
+        group.classList.toggle('is-hidden', !show);
+        if (show) visibleGroups += 1;
+      });
+
+      mediaEmpty.hidden = visibleGroups > 0;
+    }
 
     mediaButtons.forEach((button) => {
       button.addEventListener('click', () => {
-        const filter = button.dataset.filter;
-
+        currentFilter = button.dataset.filter;
         mediaButtons.forEach((item) => item.classList.toggle('is-active', item === button));
-
-        mediaCards.forEach((card) => {
-          const match = filter === 'all' || card.dataset.type.split(/\s+/).includes(filter);
-          card.classList.toggle('is-hidden', !match);
-        });
-
-        mediaGroups.forEach((group) => {
-          const hasVisibleCards = group.querySelector('.media-card:not(.is-hidden)');
-          group.classList.toggle('is-hidden', !hasVisibleCards);
-        });
+        applyMediaFilters();
       });
+    });
+
+    window.MC_setupTeamPicker(mediaCategory, mediaTeam, (teamKey) => {
+      currentTeam = teamKey;
+      applyMediaFilters();
     });
   </script>
 </body>

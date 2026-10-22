@@ -99,31 +99,57 @@
             </div>
           </div>
         </div>
-        <a href="noticias.html" aria-current="page">Notícias</a>
+        <div class="nav__dropdown">
+          <button class="nav__button" type="button" aria-current="page">Notícias <span>▾</span></button>
+          <div class="dropdown-menu">
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 11</span>
+              <a href="noticias.html#futebol-11-seniores">Seniores</a>
+              <a href="noticias.html#futebol-11-veteranos">Veteranos</a>
+              <a href="noticias.html#futebol-11-jun-a-s19">Jun A · S19</a>
+              <a href="noticias.html#futebol-11-jun-b-s17">Jun B · S17</a>
+              <a href="noticias.html#futebol-11-jun-c-s15">Jun C · S15</a>
+              <a href="noticias.html#futebol-11-jun-d-s13">Jun D · S13</a>
+              <a href="noticias.html#futebol-11-jun-e-s12">Jun E · S12</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 9</span>
+              <a href="noticias.html#futebol-9-jun-d-s13">Jun D · S13</a>
+            </div>
+            <div class="dropdown-group">
+              <span class="dropdown-group__title">Futebol 7</span>
+              <a href="noticias.html#futebol-7-jun-d-s13">Jun D · S13</a>
+              <a href="noticias.html#futebol-7-jun-d-s12">Jun D · S12</a>
+              <a href="noticias.html#futebol-7-jun-e-s10">Jun E · S10</a>
+              <a href="noticias.html#futebol-7-jun-e-s11">Jun E · S11</a>
+              <a href="noticias.html#futebol-7-jun-f-s9">Jun F · S9</a>
+            </div>
+          </div>
+        </div>
         <div class="nav__dropdown">
           <button class="nav__button" type="button">Fotos e vídeos <span>▾</span></button>
           <div class="dropdown-menu">
             <div class="dropdown-group">
               <span class="dropdown-group__title">Futebol 11</span>
-              <a href="media.html">Seniores</a>
-              <a href="media.html">Veteranos</a>
-              <a href="media.html">Jun A · S19</a>
-              <a href="media.html">Jun B · S17</a>
-              <a href="media.html">Jun C · S15</a>
-              <a href="media.html">Jun D · S13</a>
-              <a href="media.html">Jun E · S12</a>
+              <a href="media.html#futebol-11-seniores">Seniores</a>
+              <a href="media.html#futebol-11-veteranos">Veteranos</a>
+              <a href="media.html#futebol-11-jun-a-s19">Jun A · S19</a>
+              <a href="media.html#futebol-11-jun-b-s17">Jun B · S17</a>
+              <a href="media.html#futebol-11-jun-c-s15">Jun C · S15</a>
+              <a href="media.html#futebol-11-jun-d-s13">Jun D · S13</a>
+              <a href="media.html#futebol-11-jun-e-s12">Jun E · S12</a>
             </div>
             <div class="dropdown-group">
               <span class="dropdown-group__title">Futebol 9</span>
-              <a href="media.html">Jun D · S13</a>
+              <a href="media.html#futebol-9-jun-d-s13">Jun D · S13</a>
             </div>
             <div class="dropdown-group">
               <span class="dropdown-group__title">Futebol 7</span>
-              <a href="media.html">Jun D · S13</a>
-              <a href="media.html">Jun D · S12</a>
-              <a href="media.html">Jun E · S10</a>
-              <a href="media.html">Jun E · S11</a>
-              <a href="media.html">Jun F · S9</a>
+              <a href="media.html#futebol-7-jun-d-s13">Jun D · S13</a>
+              <a href="media.html#futebol-7-jun-d-s12">Jun D · S12</a>
+              <a href="media.html#futebol-7-jun-e-s10">Jun E · S10</a>
+              <a href="media.html#futebol-7-jun-e-s11">Jun E · S11</a>
+              <a href="media.html#futebol-7-jun-f-s9">Jun F · S9</a>
             </div>
           </div>
         </div>
@@ -190,11 +216,23 @@
     <div class="conteneur page-header">
       <p class="eyebrow">Atualidade</p>
       <h1>Notícias</h1>
+      <div class="team-switcher">
+        <label class="team-switcher__label" for="newsCategory">Categoria</label>
+        <select id="newsCategory" class="team-switcher__select" aria-label="Escolher categoria">
+          <option value="futebol-11" selected>Futebol 11</option>
+          <option value="futebol-9">Futebol 9</option>
+          <option value="futebol-7">Futebol 7</option>
+        </select>
+        <label class="team-switcher__label" for="newsTeam">Equipa</label>
+        <select id="newsTeam" class="team-switcher__select" aria-label="Escolher equipa"></select>
+      </div>
     </div>
 
     <section class="section-box">
       <div class="conteneur">
         <div class="players-grid" id="newsResults"></div>
+        <p class="empty-state" id="newsEmpty" hidden>Ainda não há notícias para esta equipa.</p>
+        <p class="empty-state" id="newsEmpty" hidden>Ainda não há notícias para esta equipa.</p>
       </div>
     </section>
   </main>
@@ -228,6 +266,7 @@
   </footer>
 
   <script src="match-data.js"></script>
+  <script src="equipas-data.js"></script>
   <script>
     const newsResults = document.getElementById('newsResults');
     const monthNames = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
@@ -237,10 +276,22 @@
       return `${String(day).padStart(2, '0')} ${monthNames[month - 1]} ${year}`;
     }
 
-    newsResults.innerHTML = window.MONTE_CORDOVA_DATA.results
-      .slice()
-      .sort((first, second) => second.dateISO.localeCompare(first.dateISO))
-      .map((result) => `
+    const newsEmpty = document.getElementById('newsEmpty');
+    const newsCategory = document.getElementById('newsCategory');
+    const newsTeam = document.getElementById('newsTeam');
+
+    function renderNews(teamKey) {
+      const today = new Date();
+      const list = window.MONTE_CORDOVA_DATA.results
+        .filter((result) => result.team === teamKey)
+        .filter((result) => {
+          const [year, month, day] = result.dateISO.split('-').map(Number);
+          return new Date(year, month - 1, day) <= today;
+        })
+        .sort((first, second) => second.dateISO.localeCompare(first.dateISO));
+
+      newsEmpty.hidden = list.length > 0;
+      newsResults.innerHTML = list.map((result) => `
         <article class="player-card">
           <div class="player-card__portrait" style="background-image: url('${result.image}'); background-size: cover; background-position: center;"></div>
           <div class="player-card__body">
@@ -250,6 +301,9 @@
           </div>
         </article>
       `).join('');
+    }
+
+    window.MC_setupTeamPicker(newsCategory, newsTeam, renderNews);
 
     const burger = document.querySelector('.burger');
     const menu = document.getElementById('menu');

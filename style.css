@@ -925,3 +925,19 @@ main > .page-header {
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* ---------- Messages « rien à afficher » ---------- */
+.empty-state {
+  padding: 1.6rem 1.4rem;
+  background: var(--white);
+  border: 1px dashed var(--blue-line);
+  border-radius: var(--radius);
+  color: var(--muted);
+  font-weight: 600;
+  text-align: center;
+}
+
+.empty-state[hidden],
+.section-box[hidden] { display: none; }
+
+.nav__button[aria-current="page"] { border-bottom-color: var(--green); }

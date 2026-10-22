@@ -11,7 +11,7 @@ window.MONTE_CORDOVA_DATA = {
     { cat: 'seniores', label: 'Seniores', jornada: '9.ª Jornada', casa: 'SC duas Igrejas', fora: 'Monte Cordova FC', dateISO: '2026-11-29', time: '15:30', data: '29/11 · 15:30', local: 'Complexo Desportivo' },
     { cat: 'seniores', label: 'Seniores', jornada: '10.ª Jornada', casa: 'Monte Cordova FC', fora: 'ADC Frazão', dateISO: '2026-12-06', time: '15:30', data: '06/12 · 15:30', local: 'Campo de Monte Cordova' },
     { cat: 'seniores', label: 'Seniores', jornada: '11.ª Jornada', casa: 'GD Leões De Seroa', fora: 'Monte Cordova FC', dateISO: '2026-12-13', time: '15:30', data: '13/12 · 15:30', local: 'Complexo Desportivo de Seroa' },
-    { cat: 'seniores', label: 'Seniores', jornada: '12.ª Jornada', casa: 'Monte Cordova FC', fora: '', dateISO: '2026-12-20', time: '15:30', data: '20/12 · 15:30', local: 'Campo de Monte Cordova' },
+    { cat: 'seniores', label: 'Seniores', jornada: '12.ª Jornada', casa: 'Monte Cordova FC', fora: 'Fc', dateISO: '2026-12-20', time: '15:30', data: '20/12 · 15:30', local: 'Campo de Monte Cordova' },
     { cat: 'seniores', label: 'Seniores', jornada: '13.ª Jornada', casa: 'GDRC São Luis', fora: 'Monte Cordova FC', dateISO: '2027-01-10', time: '15:30', data: '10/01 · 15:30', local: 'Complexo Desportivo São Luis' },
     { cat: 'seniores', label: 'Seniores', jornada: '14.ª Jornada', casa: 'AD Refojos', fora: 'Monte Cordova FC', dateISO: '2027-01-17', time: '15:30', data: '17/01 · 15:30', local: 'Parque Desportivo de Refojos' },
     { cat: 'seniores', label: 'Seniores', jornada: '15.ª Jornada', casa: 'Monte Cordova FC', fora: 'AR Sequeirô', dateISO: '2027-01-24', time: '15:30', data: '24/01 · 15:30', local: 'Campo de Monte Cordova' },
@@ -29,7 +29,17 @@ window.MONTE_CORDOVA_DATA = {
   ],
   results: [
     {
+      dateISO: '2026-10-25',
+      cat: 'seniores', team: 'futebol-11-seniores',
+      home: 'Penamaior', away: 'Monte Cordova FC', score: '?',
+      title: 'na 5.ª jornada',
+      summary: '',
+      outcome: '?',
+      image: 'images/penamaior/photonoticias'
+    },
+    {
       dateISO: '2026-10-17',
+      cat: 'seniores', team: 'futebol-11-seniores',
       home: 'Monte Córdova FC', away: 'FC Termas São Vicente', score: '5–2',
       title: 'Monte Córdova vence por 5–2 na 4.ª jornada',
       summary: 'O Monte Córdova FC conquistou uma vitória por 5–2 na 4.ª jornada. Parabéns a todos os jogadores e à equipa técnica!',
@@ -38,6 +48,7 @@ window.MONTE_CORDOVA_DATA = {
     },
     {
       dateISO: '2026-10-10',
+      cat: 'seniores', team: 'futebol-11-seniores',
       home: 'CCR Raimonda', away: 'Monte Córdova FC', score: '0–0',
       title: 'Empate sem golos para o Monte Córdova FC',
       summary: 'O encontro terminou 0–0 e cada equipa somou um ponto. O Monte Córdova FC segue focado nos próximos desafios. Força, Monte!',
@@ -46,6 +57,7 @@ window.MONTE_CORDOVA_DATA = {
     },
     {
       dateISO: '2026-09-27',
+      cat: 'seniores', team: 'futebol-11-seniores',
       home: 'AR Sequeiró', away: 'Monte Córdova FC', score: '1–4',
       title: 'Vitória expressiva por 4–1',
       summary: 'O Monte Córdova FC conquistou uma vitória por 4–1 e somou três pontos. Parabéns a todo o grupo pelo resultado e pelo trabalho em equipa!',
@@ -54,6 +66,7 @@ window.MONTE_CORDOVA_DATA = {
     },
     {
       dateISO: '2026-09-20',
+      cat: 'seniores', team: 'futebol-11-seniores',
       home: 'Monte Córdova FC', away: 'AB Refojos', score: '3–3',
       title: 'Estreia com seis golos e empate 3–3',
       summary: 'A primeira jornada terminou com um empate a três golos. O Monte Córdova FC começou a época a somar um ponto num encontro cheio de golos.',
