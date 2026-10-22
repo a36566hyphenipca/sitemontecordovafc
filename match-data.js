@@ -25,7 +25,7 @@ window.MONTE_CORDOVA_DATA = {
     { cat: 'seniores', label: 'Seniores', jornada: '23.ª Jornada', casa: 'ADC Frazão', fora: 'Monte Cordova FC', dateISO: '2027-03-28', time: '15:30', data: '28/03 · 15:30', local: 'Recinto a indicar' },
     { cat: 'seniores', label: 'Seniores', jornada: '24.ª Jornada', casa: 'Monte Cordova FC', fora: 'CD Leões De Seroa', dateISO: '2027-04-04', time: '', data: '04/04', local: 'Campo de Monte Cordova' },
     { cat: 'seniores', label: 'Seniores', jornada: '25.ª Jornada', casa: 'FC Cristelo', fora: 'Monte Cordova FC', dateISO: '2027-04-11', time: '', data: '11/04', local: 'Cidade Desportiva Paredes' },
-    { cat: 'seniores', label: 'Seniores', jornada: '26.ª Jornada', casa: 'Monte Cordova FC', fora: 'GDRC São Luis', dateISO: '2027-04-18', time: '', data: '18/04', local: 'Campo de Monte Cordova' }
+    { cat: 'seniores', label: 'Seniores', jornada: '26.ª Jornada', casa: 'Monte Cordova FC', fora: 'GDRC São Luis', dateISO: '2027-04-18', time: '', data: '18/04', local: 'Campo de Monte Cordova' },
     {cat:'veteranos',label:'Veteranos',casa:'Monte Cordova FC', fora'Ansão',dateISO:'2026-10-24',time:'17:30'data:'24/10',local:'Campo Monte Cordova'}
     
   ],
