@@ -49,25 +49,41 @@ window.MONTE_CORDOVA_DATA = {
     { cat: 'juniores', label: 'Jun B · S17', jornada: '20.ª Jornada', casa: 'Monte Córdova FC', fora: 'ADC Frazão', dateISO: '2027-04-18', time: '09:00', data: '18/04 · 09:00', local: 'Campo de Monte Cordova' },
     { cat: 'juniores', label: 'Jun B · S17', jornada: '21.ª Jornada', casa: 'Monte Córdova FC', fora: 'FC Vilarinho', dateISO: '2027-04-25', time: '09:00', data: '25/04 · 09:00', local: 'Campo de Monte Cordova' },
     { cat: 'juniores', label: 'Jun B · S17', jornada: '22.ª Jornada', casa: 'AR São Martinho B', fora: 'Monte Córdova FC', dateISO: '2027-05-02', time: '09:00', data: '02/05 · 09:00', local: 'A indicar' },
-  ,{ cat:'veteranos',label:'veteranos',casa:'Veteranos Monte Cordova',fora:'Veteranos Courense',dateISO:'2026-10-10',time:'10:00',data:'12/10',local:'Campo de Monte Cordova'}
-,  { cat:'veteranos',label:'veteranos',casa:'Veteranos Cristelo',fora:'Veteranos Monte Cordova',dateISO:'2026-09-29',time:'10:00',data:'29/09',local:'Campo de Cristelo'}
+    { cat:'veteranos',label:'veteranos',casa:'Veteranos Monte Cordova',fora:'Veteranos Courense',dateISO:'2026-10-10',time:'10:00',data:'12/10',local:'Campo de Monte Cordova'},
+    { cat:'veteranos',label:'veteranos',casa:'Veteranos Cristelo',fora:'Veteranos Monte Cordova',dateISO:'2026-09-29',time:'10:00',data:'29/09',local:'Campo de Cristelo'},
+    {cat :'futebol-7',label:'SUB-11',casa:'Monte Cordova',fora:'',dateISO:"2026-10-24",time:'10:00',data:'24/10',local:'Campo Monte Cordova'},
+{cat:'veteranos',label:'veteranos',casa:'Monte cordova',fora:'Ansão',dateISO:"2026-10-24",time:'17:30',data:'24/10',local:'Campo Monte Cordova'}
 ],
   results: [
+{
+  dateISO:'2026-10-24',
+  cat:'futebol-7',team:'futebol-7-jun-e-s11',
+  home:'Monte Cordova',away:'Ansão',score:'2-1',
+  outcome:'V',
+  image:''
+},
+{
+  dateISO:'2026-10-24',
+  cat:'veteranos',team:'futebol-11-veteranos',
+  home:'Monte Cordova',away:'',score:'2-0',
+  outcome:'V',
+  image:''
+},
     {
   dateISO:'2026-09-29',
-  cat:'veteranos',team:'veteranos',
+  cat:'veteranos',team:'futebol-11-veteranos',
   home:'Cristelo',away:'Monte Cordova',score:'4-2',
   outcome:'D'
     },
-   , {
+    {
   dateISO:'2026-10-12',
-  cat:'veteranos',team:'veteranos',
+  cat:'veteranos',team:'futebol-11-veteranos',
   home:'Montecordova',away:'Courense',score:'2-6',
   outcome:'D'
     },
     {
   dateISO:'2026-10-18',
-   cat: 'juniores',team:'Futebol-11-SUB17',
+   cat: 'juniores',team:'futebol-11-jun-b-s17',
    home:'GDC Ferreira',away:'Monte Cordova',score:'5-0',
       title:'Defeita na primeira Jornada',
       outcome:'D'

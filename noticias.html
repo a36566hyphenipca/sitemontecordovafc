@@ -293,11 +293,11 @@
       newsEmpty.hidden = list.length > 0;
       newsResults.innerHTML = list.map((result) => `
         <article class="player-card">
-          <div class="player-card__portrait" style="background-image: url('${result.image}'); background-size: cover; background-position: center;"></div>
+          ${result.image ? `<div class="player-card__portrait" style="background-image: url('${result.image}'); background-size: cover; background-position: center;"></div>` : ''}
           <div class="player-card__body">
             <div class="player-card__meta">Resultado · ${formatResultDate(result.dateISO)}</div>
-            <h3>${result.title}</h3>
-            <p>${result.summary}</p>
+            <h3>${result.title || `${result.home} ${result.score} ${result.away}`}</h3>
+            <p>${result.summary || ''}</p>
           </div>
         </article>
       `).join('');
