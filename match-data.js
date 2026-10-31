@@ -52,10 +52,17 @@ window.MONTE_CORDOVA_DATA = {
     { cat:'veteranos',label:'veteranos',casa:'Veteranos Monte Cordova',fora:'Veteranos Courense',dateISO:'2026-10-10',time:'10:00',data:'12/10',local:'Campo de Monte Cordova'},
     { cat:'veteranos',label:'veteranos',casa:'Veteranos Cristelo',fora:'Veteranos Monte Cordova',dateISO:'2026-09-29',time:'10:00',data:'29/09',local:'Campo de Cristelo'},
     {cat :'futebol-7',label:'SUB-11',casa:'Monte Cordova',fora:'',dateISO:"2026-10-24",time:'10:00',data:'24/10',local:'Campo Monte Cordova'},
-{cat:'veteranos',label:'veteranos',casa:'Monte cordova',fora:'Ansão',dateISO:"2026-10-24",time:'17:30',data:'24/10',local:'Campo Monte Cordova'}
+{cat:'veteranos',label:'veteranos',casa:'Monte cordova',fora:'Ansão',dateISO:"2026-10-24",time:'17:30',data:'24/10',local:'Campo Monte Cordova'},
+{cat:'juniores',label:'Jun C . S15',casa:'Monte Cordova',fora:'Tirsense',dateISO:"2026-10-25",time:'10:30',data:'24/10',local:'Campo Monte Cordova'}
 ],
   results: [
 {
+  dateISO:'2026-10-25',
+  cat:'futebol-11',team:'Jun C . S15',
+  home:'Monte Cordova',away:'Tirsense',
+  outcome:'E'
+},
+    {
   dateISO:'2026-10-24',
   cat:'futebol-7',team:'futebol-7-jun-e-s11',
   home:'Monte Cordova',away:'Ansão',score:'2-1',
@@ -91,7 +98,7 @@ window.MONTE_CORDOVA_DATA = {
     {
       dateISO: '2026-10-25',
       cat: 'seniores', team: 'futebol-11-seniores',
-      home: 'Penamaior', away: 'Monte Cordova FC', score: '0-0',
+      home: 'Penamaior', away: 'Monte Cordova FC', score: '2-0',
       title: 'na 5.ª jornada',
       summary: 'kjsskfbskj',
       outcome: 'E',
